@@ -1,26 +1,26 @@
 import { motion } from 'framer-motion';
 
 const skills = {
-  frontend: [
-    { name: 'React', level: 95 },
-    { name: 'TypeScript', level: 90 },
-    { name: 'Next.js', level: 88 },
-    { name: 'Tailwind CSS', level: 95 },
-    { name: 'Vue.js', level: 75 },
+  Bahasa: [
+    { name: 'Bahasa Indonesia', level: 85 },
+    { name: 'Bahasa inggris', level: 90 },
+    { name: 'Bahasa Arab', level: 60 },
+    // { name: 'Tailwind CSS', level: 95 },
+    // { name: 'Vue.js', level: 75 },
   ],
-  backend: [
-    { name: 'Node.js', level: 90 },
-    { name: 'Python', level: 85 },
-    { name: 'PostgreSQL', level: 88 },
-    { name: 'MongoDB', level: 82 },
-    { name: 'GraphQL', level: 78 },
+  IPA: [
+    { name: 'Biologi', level: 90 },
+    { name: 'Fisika', level: 85 },
+    { name: 'Kimia', level: 88 },
+    { name: 'Matematika', level: 82 },
+    // { name: 'GraphQL', level: 78 },
   ],
-  tools: [
-    { name: 'Git', level: 95 },
-    { name: 'Docker', level: 80 },
-    { name: 'AWS', level: 75 },
-    { name: 'Figma', level: 85 },
-    { name: 'CI/CD', level: 82 },
+  IPS: [
+    { name: 'Geografi', level: 80 },
+    { name: 'Sosiologi', level: 75 },
+    { name: 'Sejarah', level: 80 },
+    { name: 'Ekonomi', level: 70 },
+    // { name: 'CI/CD', level: 82 },
   ],
 };
 
@@ -63,13 +63,13 @@ export default function SkillsSection() {
         >
           <span className="text-primary font-medium mb-2 block">Keahlian</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Skills &amp; Teknologi
+            Kemampuan Akademis
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Frontend */}
+          {/* Bahasa */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -81,16 +81,16 @@ export default function SkillsSection() {
               <div className="p-3 rounded-xl bg-primary/10">
                 <span className="text-2xl">🎨</span>
               </div>
-              <h3 className="font-display text-xl font-bold">Frontend</h3>
+              <h3 className="font-display text-xl font-bold">Bahasa</h3>
             </div>
             <div className="space-y-4">
-              {skills.frontend.map((skill, index) => (
+              {skills.Bahasa.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
           </motion.div>
 
-          {/* Backend */}
+          {/* IPA */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -102,16 +102,16 @@ export default function SkillsSection() {
               <div className="p-3 rounded-xl bg-primary/10">
                 <span className="text-2xl">⚙️</span>
               </div>
-              <h3 className="font-display text-xl font-bold">Backend</h3>
+              <h3 className="font-display text-xl font-bold">IPA</h3>
             </div>
             <div className="space-y-4">
-              {skills.backend.map((skill, index) => (
+              {skills.IPA.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
           </motion.div>
 
-          {/* Tools */}
+          {/* IPS */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -123,10 +123,10 @@ export default function SkillsSection() {
               <div className="p-3 rounded-xl bg-primary/10">
                 <span className="text-2xl">🛠️</span>
               </div>
-              <h3 className="font-display text-xl font-bold">Tools &amp; Lainnya</h3>
+              <h3 className="font-display text-xl font-bold">IPS</h3>
             </div>
             <div className="space-y-4">
-              {skills.tools.map((skill, index) => (
+              {skills.IPS.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
