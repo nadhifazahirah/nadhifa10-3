@@ -26,7 +26,7 @@ export default function HeroSection() {
             className="flex justify-center"
           >
             <img
-              src="/public/foto.jfif" // 👉 ganti dengan foto kamu
+              src="/foto.jfif" // 👉 ganti dengan foto kamu
               alt="nadhifa"
               className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-glow border-4 border-white/20"
             />
